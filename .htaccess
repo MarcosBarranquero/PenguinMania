@@ -1,0 +1,12 @@
+# Penguin Manía — URLs limpias en Apache
+# Los archivos reales se sirven tal cual; todo lo demás (carpetas de páginas, URLs antiguas…) pasa por index.php
+Options -Indexes
+DirectoryIndex index.html index.php
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule ^ - [L]
+	RewriteRule ^ index.php [L,QSA]
+</IfModule>

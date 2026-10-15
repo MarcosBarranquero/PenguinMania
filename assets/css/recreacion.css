@@ -1,0 +1,63 @@
+/* Estilos de apoyo de la recreación (lo que no se archivó del tema y de ZOO) */
+
+/* Recurso no recuperado */
+.pm-missing {
+	display: inline-flex; align-items: center; justify-content: center; max-width: 100%;
+	box-sizing: border-box; padding: 10px; vertical-align: middle;
+	border: 1px dashed rgba(166, 223, 235, 0.35); border-radius: 4px;
+	background: rgba(0, 0, 0, 0.15); color: #5288A1; font-size: 12px; text-align: center;
+}
+.pm-nota { padding: 10px 15px; border-left: 3px solid #398AA4; background: rgba(255, 255, 255, 0.05); }
+#footer .pm-recreacion { margin-top: 8px; font-size: 11px; opacity: 0.8; }
+
+/* Iconos sociales del módulo "Siguenos" (portada) */
+ul.social-icons { list-style: none; margin: 0; padding: 0; }
+ul.social-icons li { display: inline-block; margin-left: 8px; }
+/* (los enlaces externos se han quitado: los iconos quedan como <span>) */
+ul.social-icons a, ul.social-icons span.pm-externo { display: block; width: 40px; height: 40px; border-radius: 50%; background: #398AA4; text-align: center; line-height: 40px; color: #fff; font-weight: bold; text-decoration: none; }
+ul.social-icons li.twitter > *:before { content: "t"; font: bold 20px/40px Arial, sans-serif; }
+ul.social-icons li.youtube > *:before { content: "\25B6"; font: 16px/40px Arial, sans-serif; }
+
+/* Enlaces quitados: externos y a páginas que no se archivaron (se ven como texto normal) */
+.pm-externo { color: inherit; }
+.pm-sin-enlace { cursor: default; }
+#system .pagination span.pm-sin-enlace, #zoo .pagination span.pm-sin-enlace { display: inline-block; margin: 0 2px; padding: 3px 9px; opacity: 0.35; }
+#system .item > .links span.pm-sin-enlace { display: none; }
+
+/* Lightbox (efectos.css solo trae los colores) */
+#lightbox-outer { position: relative; padding: 10px; border-radius: 4px; }
+#lightbox-content img, #lightbox-content iframe { display: block; }
+#lightbox-close { position: absolute; top: -15px; right: -15px; width: 30px; height: 30px; cursor: pointer; background: url(../img/efectos/lightbox-close.png) 0 0 no-repeat; }
+#lightbox-left, #lightbox-right { position: absolute; top: 0; bottom: 0; width: 35%; cursor: pointer; }
+#lightbox-left { left: 0; } #lightbox-right { right: 0; }
+#lightbox-title { padding: 6px 10px; color: #fff; text-align: center; }
+
+/* ZOO (blog de noticias, recortes) de la versión Joomla 2013: su CSS no se archivó */
+#zoo .items .teaser-item { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+#zoo h1.pos-title { margin: 0 0 5px 0; }
+#zoo .pos-meta, #zoo .pos-subtitle { margin: 0 0 10px 0; color: #5288A1; font-size: 12px; }
+#zoo h2.pos-subtitle { font-size: 14px; }
+#zoo .pos-links, #zoo p.links { margin-top: 10px; }
+#zoo .pos-links a, #zoo p.links a { display: inline-block; margin-right: 6px; padding: 3px 10px; border-radius: 3px; background: rgba(255, 255, 255, 0.08); }
+#zoo .pagination { margin-top: 20px; text-align: center; }
+#zoo .pagination a, #zoo .pagination strong { display: inline-block; margin: 0 2px; padding: 3px 9px; border-radius: 3px; background: rgba(255, 255, 255, 0.08); }
+#zoo .pagination strong { background: #398AA4; color: #fff; }
+#zoo .alpha-index { margin: 10px 0 20px; text-align: center; }
+#zoo .alpha-index a, #zoo .alpha-index span { display: inline-block; margin: 2px; padding: 2px 6px; }
+#zoo .alpha-index span { opacity: 0.35; }
+#zoo .categories, #zoo .items { overflow: hidden; }
+#zoo .categories .category, #zoo .items .teaser-item { box-sizing: border-box; }
+#zoo .width25, #zoo .width33, #zoo .width50 { float: left; box-sizing: border-box; padding-right: 15px; }
+#zoo .width25 { width: 25%; } #zoo .width33 { width: 33.33%; } #zoo .width50 { width: 50%; }
+#zoo .width100 { width: 100%; }
+#zoo .element-download a, #zoo a.yoo-zoo-download { display: inline-block; margin-top: 8px; padding: 4px 12px; border-radius: 3px; background: #398AA4; color: #fff; }
+#zoo .floatbox { overflow: hidden; }
+#zoo .comments, #zoo #comments { margin-top: 20px; }
+#zoo img { max-width: 100%; height: auto; }
+/* Texto pegado desde otros blogs con colores en línea pensados para fondo blanco: ilegible sobre Radiance */
+#zoo .element-textarea [style*="color"] { color: inherit !important; }
+#zoo .element-textarea [style*="background"] { background-color: transparent !important; }
+#content iframe { max-width: 100%; }
+
+/* Barras laterales Joomla (ZOO categorías) */
+ul.zoo-list, ul.zoo-category-list { list-style: none; margin: 0; padding: 0; }

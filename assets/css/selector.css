@@ -1,0 +1,29 @@
+/* Selector de versión (página de entrada) */
+@font-face { font-family: 'FugazOne'; src: url("../fuentes/fugaz-one.woff") format('woff'), url("../fuentes/fugaz-one.ttf") format('truetype'); }
+:root { --fondo: #103552; --texto: #A6DFEB; --claro: #D5F1FF; --acento: #65ecff; --boton: #398AA4; --tenue: #5288A1; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body.pm-selector {
+	background: var(--fondo) url("../img/degradado.png") 50% -500px no-repeat;
+	color: var(--texto); font: 14px/1.5 Arial, Helvetica, sans-serif; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	position: relative; overflow-x: hidden;
+}
+.pagina { max-width: 900px; margin: 0 auto; padding: 48px 16px 30px; }
+.cabecera { text-align: center; margin-bottom: 40px; }
+.cabecera img { width: 200px; height: auto; }
+.cabecera h1 { font: 22px/1.2 'FugazOne', sans-serif; color: var(--acento); text-transform: uppercase; margin: 18px 0 8px; }
+.cabecera p { margin: 0 auto; max-width: 560px; }
+.versiones { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.version {
+	display: flex; flex-direction: column; padding: 24px; border-radius: 8px;
+	background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 255, 255, 0.06); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+.version h2 { margin: 0; font: 46px/1 'FugazOne', sans-serif; color: var(--claro); }
+.version .fechas { color: var(--tenue); font-size: 12px; text-transform: uppercase; margin: 8px 0 14px; }
+.version p { margin: 0 0 16px; color: var(--claro); }
+.secciones { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.secciones a { display: inline-block; padding: 3px 10px; border-radius: 3px; background: rgba(255, 255, 255, 0.07); color: var(--texto); text-decoration: none; font-size: 12px; }
+.secciones a:hover { background: var(--boton); color: #fff; }
+.entrar { margin-top: auto; display: block; text-align: center; padding: 10px; border-radius: 4px; background: var(--boton); color: #fff; text-decoration: none; font: 16px 'FugazOne', sans-serif; text-transform: uppercase; }
+.entrar:hover { background: var(--acento); color: var(--fondo); }
+.pie { text-align: center; color: #486A87; font-size: 11px; margin-top: 40px; }
